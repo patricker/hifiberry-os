@@ -65,7 +65,9 @@ Creates the image and update files for a specific Raspberry Pi hardware. Paramet
 ## update-pi
 
 Creates an image from the latest compile run and pushes it to the Raspberry Pi given as a command line parameter.
-To make sure this works, the version of Raspberry Pi must match the version that you compiles the image for. Also the updater expects that the Pi still uses the default password. YOu also need to have the sshpass tool installed. 
+To make sure this works, the version of Raspberry Pi must match the version that you compiles the image for. Also the updater expects that the Pi still uses the default password. Yuu also need to have the sshpass tool installed, make sure to add the host keys for each new Pi to your known hosts file before beginning an update, e.g.
+
+`ssh-keyscan raspberrypi-ip >> ~/.ssh/known_hosts`
 
 ## build-all
 
